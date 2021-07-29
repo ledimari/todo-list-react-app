@@ -1,0 +1,47 @@
+.taskList__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 395px;
+  height: 270px;
+  background-color: #FFFFFF;
+}
+
+.taskList__list {
+  overflow: auto;
+  text-align: left;
+  width: 100%;
+  list-style-type: circle;
+  list-style-position: outside;
+  padding-inline-start: 40px;
+  padding-inline-end: 20px;
+  box-sizing: border-box;
+}
+
+.taskList__link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  padding: 15px 0;
+  color: #979BA7;
+  font-size: 20px;
+}
+
+.taskList__link:hover .trash-icon {
+  opacity: 1;
+}
+
+.circle-icon {
+  padding: 10px;
+}
+
+.taskList__task {
+  width: 100%;
+}
+
+.trash-icon {
+  opacity: 0;
+  padding: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
